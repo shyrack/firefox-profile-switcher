@@ -1,1 +1,1 @@
-test
+# Firefox Profile Switcher (WIP)
