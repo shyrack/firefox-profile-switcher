@@ -6,6 +6,6 @@ export default defineConfig({
     name: "firefox-profile-switcher",
     version: "1",
   },
-  manifestVersion: 3,
+  manifestVersion: 2,
   vite: () => ({}),
 });
