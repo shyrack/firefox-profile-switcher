@@ -1,20 +1,41 @@
-import { Paper, styled, Typography } from "@mui/material";
+import {
+  Button,
+  ButtonGroup,
+  Divider,
+  Paper,
+  styled,
+  Typography,
+} from "@mui/material";
 
 const RootPaper = styled(Paper)(
-  ({ theme }) => ({
-    padding: theme.spacing(1),
-  }),
+  {
+    display: "flex",
+    flexDirection: "column",
+    flexWrap: "nowrap",
+  },
   {
     name: "RootPaper",
   }
 );
 
+const Header = styled(Typography)(
+  ({ theme }) => ({
+    margin: theme.spacing(2),
+  }),
+  {
+    name: "Header",
+  }
+);
+
 export default function App() {
   return (
-    <main>
-      <RootPaper variant={"outlined"}>
-        <Typography>hello world!</Typography>
-      </RootPaper>
-    </main>
+    <RootPaper variant={"outlined"}>
+      <Header variant={"h6"}>Profile Switcher</Header>
+      <Divider />
+      <ButtonGroup orientation={"vertical"}>
+        <Button>One</Button>
+        <Button>Two</Button>
+      </ButtonGroup>
+    </RootPaper>
   );
 }
