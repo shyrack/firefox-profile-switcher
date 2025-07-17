@@ -1,3 +1,5 @@
+import { Paper } from "@mui/material";
+
 export default function App() {
-  return <div>hello world! 2</div>;
+  return <Paper>hello</Paper>;
 }
