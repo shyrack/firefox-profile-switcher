@@ -5,7 +5,7 @@ import { theme } from "./theme/theme";
 
 const root = ReactDOM.createRoot(document.getElementById("root")!);
 root.render(
-  <ThemeProvider theme={theme}>
+  <ThemeProvider defaultMode={"system"} theme={theme}>
     <App />
   </ThemeProvider>
 );
