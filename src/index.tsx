@@ -1,2 +1,2 @@
 console.log("hello");
-const x = () => {}
+const x = () => {};
